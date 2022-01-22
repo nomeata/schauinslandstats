@@ -11,7 +11,7 @@ import os
 from collections import defaultdict
 
 FIRST_DAY = datetime.date(2019,9,16)
-LAST_DAY = datetime.date(2021,9,30)
+LAST_DAY = datetime.date(2022,12,31)
 
 
 #
@@ -63,6 +63,9 @@ def scrape_page_for_flights(url):
 
 # schaui-flüge
 scrape_page_for_flights("https://www.dhv-xc.de/leonardo/index.php?op=list_flights&takeoffID=9306&season=0&year=0&month=0&day=0")
+# lindenberg-flüge
+scrape_page_for_flights("https://www.dhv-xc.de/leonardo/index.php?op=list_flights&takeoffID=11362&season=0&year=0&month=0&day=0")
+
 
 flight_ids.remove("1335432") # bad flight
 
